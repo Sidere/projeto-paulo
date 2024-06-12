@@ -8,10 +8,15 @@ ctk.set_appearance_mode("system")
 ctk.set_default_color_theme("blue")
 class Aluno(ctk.CTkToplevel):
     def __init__(self):
-        ##tk.Tk.__init__(self, *args, **kwargs)
+        ##tk.Tk.__init__()
         super().__init__()
         self.geometry("1100x500")
         self.title("Gerenciador de Alunos")
+
+        self.focus_set()
+        self.grab_set()
+        self.attributes('-topmost', True)
+        self.attributes('-topmost', False)
 
         ## Conexão ao banco de dados do Mysql
         self.bd = con.ConexaoMYSQL(host="localhost", user="root", password="WLY42315!", database="ete")

@@ -11,6 +11,11 @@ class Prof(ctk.CTkToplevel):
         self.geometry("1100x500")
         self.title("Gerenciador de Professores")
 
+        self.focus_set()
+        self.grab_set()
+        self.attributes('-topmost', True)
+        self.attributes('-topmost', False)
+
         # Conexão ao banco de dados MySQL
         self.bd = con.ConexaoMYSQL(host="localhost", user="root", password="WLY42315!", database="ete")
         self.bd.conectarBanco()
