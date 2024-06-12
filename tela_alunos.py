@@ -4,7 +4,7 @@ from tkinter import ttk
 from tkinter import messagebox
 import Conexao_sql as con
 
-ctk.set_appearance_mode("system")
+ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 class Aluno(ctk.CTkToplevel):
     def __init__(self):
@@ -154,7 +154,7 @@ class Aluno(ctk.CTkToplevel):
         self.janela_boletim.geometry("800x400")
         self.janela_boletim.title("Boletim")
 
-        self.lbl_selecione_aluno = ctk.CTkLabel(self.janela_boletim, text="Selecione o Aluno:")
+        self.lbl_selecione_aluno = ctk.CTkLabel(self.janela_boletim, text="Selecione o Aluno:", text_color="black")
         self.lbl_selecione_aluno.grid(row=0, column=0, padx=10, pady=10, sticky="w")
 
         self.combo_alunos = ctk.CTkComboBox(self.janela_boletim, values=self.obterListaAlunos())
