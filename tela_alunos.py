@@ -154,8 +154,8 @@ class Aluno(ctk.CTkToplevel):
         self.janela_boletim.geometry("800x400")
         self.janela_boletim.title("Boletim")
 
-        lbl_selecione_aluno = ctk.CTkLabel(self.janela_boletim, text="Selecione o Aluno:")
-        lbl_selecione_aluno.grid(row=0, column=0, padx=10, pady=10, sticky="w")
+        self.lbl_selecione_aluno = ctk.CTkLabel(self.janela_boletim, text="Selecione o Aluno:")
+        self.lbl_selecione_aluno.grid(row=0, column=0, padx=10, pady=10, sticky="w")
 
         self.combo_alunos = ctk.CTkComboBox(self.janela_boletim, values=self.obterListaAlunos())
         self.combo_alunos.grid(row=0, column=1, padx=10, pady=10, sticky="ew")
