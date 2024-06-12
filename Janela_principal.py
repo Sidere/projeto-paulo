@@ -46,7 +46,7 @@ class App(ctk.CTk):
         self.btn_profs = ctk.CTkButton(self.frame_principal, image=self.imagen3, text="Professores", command=self.abrirJanelaProf, compound="top", width=200, height=100)
         self.btn_profs.grid(row=2, column=0, padx=40, pady=10, sticky="ew")
 
-        self.btn_profs = ctk.CTkButton(self.frame_principal, image=self.imagen4, text="Avisos", compound="top", width=200, height=100)
+        self.btn_profs = ctk.CTkButton(self.frame_principal, image=self.imagen4, text="Avisos",command=self.telaAviso, compound="top", width=200, height=100)
         self.btn_profs.grid(row=2, column=1, padx=40, pady=10, sticky="ew")
     
     def abrirJanelaAluno(self):
@@ -57,6 +57,9 @@ class App(ctk.CTk):
     
     def abrirJanelaProf(self):
         self.janelaProf = tela_professores.Prof().iniciar()
+    
+    def telaAviso(self):
+        self.aviso = messagebox.showinfo("Alerta", "Esta janela ainda está em desenvolvimento.")
     
 if __name__ == "__main__":
     app = App()
