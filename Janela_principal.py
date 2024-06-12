@@ -15,10 +15,7 @@ class App(ctk.CTk):
         self.geometry("800x500")
         self.title("Gerenciador de Alunos")
 
-        self.grid_rowconfigure(0, weight=1)
-        self.grid_columnconfigure(1, weight=1)
-
-        self.frame_principal = ctk.CTkFrame(self, width=300, height=300, corner_radius=15, border_width=2)
+        self.frame_principal = ctk.CTkFrame(self, width=300, height=400, corner_radius=15, border_width=2)
         self.frame_principal.pack(pady=50, padx=50, expand=True)
 
         self.frame_principal.grid_rowconfigure(0, weight=1)
