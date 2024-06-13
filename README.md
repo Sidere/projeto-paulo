@@ -84,10 +84,11 @@ Python e bibliotecas listadas em pré-requisitos
 
 
 __Desenvolvedores/Contribuintes__ :octocat:
-Liste o time responsável pelo desenvolvimento do projeto
-
 
 Poliana Sidere
+
 Wyldson Oliveira
+
 Valmir de Almeida
+
 Pedro H. da Silva
